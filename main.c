@@ -54,7 +54,7 @@ bool main_loop(SpaceController *controller) {
         current_time = glfwGetTime();
         dt = current_time - old_time;
         
-        if(glfwGetKey(GLFW_KEY_ESC)) {
+        if(glfwGetKey(GLFW_KEY_ESC) || !glfwGetWindowParam(GLFW_OPENED)) {
             return false;
         }
         spacecontroller_update(controller, dt);
