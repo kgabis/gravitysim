@@ -61,7 +61,7 @@ static GS_INLINE PointI pointi_make(int x, int y) {
     return point;
 }
 
-static GS_INLINE inline RectangleI rectanglei_make_with_points(PointI origin, PointI size) {
+static GS_INLINE RectangleI rectanglei_make_with_points(PointI origin, PointI size) {
     RectangleI rect;
     rect.origin = origin;
     rect.size = size;

@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -O3 -flto -Wall -lglfw -lpthread -std=gnu99
 
 mac: 
-	$(CC) $(CFLAGS) -Wl,-framework,OpenGL *.c -o gravitysim 
+	$(CC) $(CFLAGS) -I/usr/local/include -L/usr/local/lib -Wl,-framework,OpenGL *.c -o gravitysim 
 
 linux:
 	$(CC) $(CFLAGS) -lm -lGL *.c -o gravitysim 

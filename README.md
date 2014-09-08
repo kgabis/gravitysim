@@ -1,5 +1,5 @@
 ##About
-GravitySim is a gravity simulator (duh) written in C, using the [Barnes-Hut](http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation) algorithm to approximate gravity interactions between objects. The only deoendency is the [GLFW library](http://www.glfw.org/), you shoud be able to install it using either apt-get on linux or homebrew on OSX.
+GravitySim is a gravity simulator (duh) written in C, using the [Barnes-Hut](http://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation) algorithm to approximate gravity interactions between objects. The only dependency is the [GLFW library](http://www.glfw.org/), you shoud be able to install it using either apt-get on linux or homebrew on OSX.
 
 ##Usage
 Compile with ```make mac``` for OSX or ```make linux``` for linux (only tested on ubuntu). Now you should be able to run it using ```./gravitysim```.  
