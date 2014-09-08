@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -O3 -flto -Wall -lglfw -lpthread -std=gnu99
+CFLAGS = -O3 -flto -Wall $(shell pkg-config --cflags --libs libglfw) -std=gnu99
 
 mac: 
 	$(CC) $(CFLAGS) -Wl,-framework,OpenGL *.c -o gravitysim 
